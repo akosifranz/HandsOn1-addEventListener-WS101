@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button</title>
+    <style>
+        body {
+            background-color: aqua;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            margin: 50px;
+        }
+
+        h1 {
+            color: blueviolet;
+        }
+        button {
+            background-color: aquamarine;
+            border-radius: 70%;
+            padding: 10px 20px;
+            margin:10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>JavaScript AddEventListener() Hands-On</h1>
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <button id="btn3">Button 3</button>
+
+    <script>
+    
+        function showAlert1() {
+            alert("Button 1 was clicked!");
+        }
+
+        function showAlert2() {
+            alert("Button 2 was clicked!");
+        }
+
+        function showAlert3() {
+            alert("Button 3 was clicked!");
+        }
+
+        document.getElementById('btn1').addEventListener('click', showAlert1);
+        document.getElementById('btn2').addEventListener('click', showAlert2);
+        document.getElementById('btn3').addEventListener('click', showAlert3);
+    
+    </script>
+</body>
+</html>
